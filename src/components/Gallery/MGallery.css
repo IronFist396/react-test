@@ -1,0 +1,49 @@
+*{
+  margin: 0
+}
+
+.img-change-btn-left{
+  position: absolute;
+  top: 50%; 
+  left: 5%;
+  background: transparent;
+  border: None;
+}
+.img-change-btn-left:hover{
+  transform: scale(1.2);
+}
+
+.img-change-btn-right{
+  position: absolute;
+  top: 50%; 
+  right: 5%;
+  background: transparent;
+  border: None
+}
+.img-change-btn-right:hover{
+  transform: scale(1.2);
+}
+.img-btn{
+  width: 25px;
+  height: 25px;
+  cursor: 'pointer' 
+}
+
+.close-btn{
+  position: absolute;
+  top: 10px;
+  right: 20px;
+  background: transparent;
+  border: None
+}
+.close-btn:hover{
+  transform: scale(1.2);
+}
+
+.loading-text{
+  display: flex;
+  height: 80vh;
+  justify-content: center;
+  align-items: center;
+  font-size: 25px;
+}

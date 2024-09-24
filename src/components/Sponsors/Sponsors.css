@@ -1,0 +1,87 @@
+.sponsors-container {
+  padding: 20px;
+  margin: 20px auto;
+  border-radius: 15px;
+  max-width: 90%;
+  /* background-color: rgba(250,250,250,0.1); */
+  background-color: #fff;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Style each row of sponsor images */
+.sponsor-row {
+  display: flex;
+  justify-content: center; /* Centers the images in each row */
+  margin-bottom: 10px;
+  flex-wrap: wrap;
+}
+
+/* Default style for images */
+.sponsor-image {
+  width: 12.75rem; /* Default size for large screens */
+  height: auto;
+  margin: 5px;
+  object-fit: contain;
+  transition: transform 0.3s;
+}
+
+.small-image{
+  width: 8.5rem;
+}
+
+.sponsor-image:hover {
+  transform: scale(1.2);
+}
+
+
+@media (max-width: 1002px) { /* Smaller screens (like tablets) */
+  .sponsor-row {
+    flex-wrap: wrap; /* Wrap images to the next line on smaller screens */
+  }
+  .sponsor-image {
+    width: 6.75rem; /* Smaller size for smaller screens */
+  }
+  .small-image{
+    width: 4.5rem;
+    height: auto;
+  }
+}
+
+@media (max-width: 702px) { /* Smaller screens (like tablets) */
+  .sponsor-row {
+    flex-wrap: wrap; /* Wrap images to the next line on smaller screens */
+  }
+  .sponsor-image {
+    width: 5.75rem; /* Smaller size for smaller screens */
+  }
+  .small-image{
+    width: 3.8rem;
+  }
+}
+
+
+
+@media (max-width: 605px) { /* Very small screens (like phones) */
+  .sponsor-row {
+    flex-direction: column; /* Stack images vertically */
+    align-items: center; /* Center each image */
+  }
+  .sponsor-image {
+    width: 100%; /* Make the image take up the full width */
+    max-width: 300px; /* Optional: Limit the max width of each image */
+    padding-bottom: 20px;
+  }
+  .small-image{
+    max-width: 200px;
+  }
+}
+
+@media (max-width: 503px) { /* Very small screens (like phones) */
+  .sponsor-image {
+    width: 100%; /* Ensure image takes full width */
+    max-width: 250px; /* Optional: Reduce max width for smaller screens */
+  }
+  .small-image{
+    max-width: 150px;
+  }
+}

@@ -1,0 +1,44 @@
+/* CompiHero.css */
+.chero-background {
+  position: relative;
+  text-align: center; /* Center text */
+  background-image: url("../../assets/maxresdefault12.png"); /* Set your background image */
+  backdrop-filter: blur(80px) brightness(80%) ; 
+  background-size: cover; /* Make sure the image covers the entire container */
+  background-position: center; /* Center the image */
+  background-repeat: no-repeat; /* Prevent the image from repeating */
+  color: white; /* Adjust text color for contrast */;
+   
+}
+
+
+.glow-text {
+position: relative;
+color: #fff; /* Default text color, adjust as needed */
+font-size: 3rem; /* Adjust font size as needed */
+}
+
+.glow-text::before {
+content: '';
+position: absolute;
+top: 0;
+left: 0;
+right: 0;
+bottom: 0;
+background: inherit;
+border-radius: 5px;
+box-shadow: 0 0 10px rgba(255, 0, 0, 0.8), /* Red glow */
+            0 0 20px rgba(255, 0, 0, 0.6), /* Red glow */
+            0 0 30px rgba(255, 0, 0, 0.4); /* Red glow */
+z-index: -1;
+filter: blur(10px); /* Adjust blur for the glow effect */
+}
+
+/* Text shadow effect */
+.text-glow {
+color: #fff; /* Text color */
+text-shadow: 
+  0 0 5px rgba(255, 0, 0, 0.8), /* Red glow */
+  0 0 10px rgba(255, 0, 0, 0.6), /* Red glow */
+  0 0 15px rgba(255, 0, 0, 0.4); /* Red glow */
+}

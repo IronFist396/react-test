@@ -1,0 +1,18 @@
+/* Adjust text size for smaller screens */
+@media (max-width: 768px) {
+  .display-4 {
+    font-size: 2rem; /* Smaller text size on small screens */
+  }
+  
+  .lead {
+    font-size: 1rem; /* Smaller text size for paragraphs on small screens */
+  }
+}
+
+/* Flexbox to make the right card (image) larger */
+.card-right {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex: 1; /* Allows the image column to grow */
+}
