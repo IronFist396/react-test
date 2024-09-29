@@ -1,0 +1,42 @@
+
+html, body {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden; 
+  width: 100%;
+  box-sizing: border-box; 
+}
+
+
+
+.title-hmpg {
+  color: white;
+  font-size: 5rem;
+  text-align: left;
+  width: 100%;
+  font-family: 'Archivo Black';
+  padding: 10px;
+}
+.outer-div {
+  display: flex;
+  justify-content: center; 
+  align-items: flex-start; 
+  padding-bottom: 80px;
+  padding-left: 10px;
+  width: 100%;
+  height: 74vh; /* This will adjust based on screen size */
+}
+
+@media (max-width: 768px) {
+  .outer-div {
+    height: 65vh; /* Adjusts height for smaller screens */
+  }
+  
+  .title-hmpg {
+    color: white;
+    font-size: 3rem;
+    text-align: center; /* Centers text */
+    width: 100%;
+    font-family: 'Archivo Black';
+  }
+}

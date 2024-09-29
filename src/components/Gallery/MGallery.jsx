@@ -186,13 +186,30 @@ import img7 from '../../assets/images/compressed/IMG_2414.jpg';
 import img8 from '../../assets/images/compressed/IMG_2418.jpg';
 import img9 from '../../assets/images/compressed/IMG_2419.jpg';
 import img10 from '../../assets/images/compressed/IMG_2420.jpg';
+import img11 from '../../assets/images/compressed/IMG_2876.jpg';
+import img12 from '../../assets/images/compressed/IMG_2908.jpg';
+import img13 from '../../assets/images/compressed/IMG_2927.jpg';
+import img14 from '../../assets/images/compressed/IMG_2932.jpg';
+import img15 from '../../assets/images/compressed/IMG_2956.jpg';
+import img16 from '../../assets/images/compressed/IMG_2975.jpg';
+import img17 from '../../assets/images/compressed/IMG_2976.jpg';
+import img18 from '../../assets/cars/c1.jpg'
+import img19 from '../../assets/cars/c2.jpg'
+import img20 from '../../assets/cars/c3_new.jpg'
+import img21 from '../../assets/images/compressed/IMG_2974.jpg'
+import img22 from '../../assets/cars/c4_new.jpg'
+import img23 from '../../assets/cars/c5.jpeg'
+import img24 from '../../assets/cars/c6.jpeg'
+import img25 from '../../assets/cars/c7.jpeg'
+import img26 from '../../assets/cars/c8.jpg'
 
 // Icon imports
 import prev from '../../assets/images/prev_img.svg';
 import next from '../../assets/images/next_img.svg';
 import close from '../../assets/images/close.svg';
 
-const images = [img1, img2, img3, img4, img5, img6, img7, img10, img8, img9, img6, img5];
+const images = [img1, img2, img3, img4, img5, img6, img7, img10, img8, img9, img11, img12, img13, img14,
+  img15, img16, img17, img18, img19, img20, img21, img24, img25, img23, img22, img26, img25];
 
 function MGallery() {
   const [data, setData] = useState({ img: '', i: 0 });

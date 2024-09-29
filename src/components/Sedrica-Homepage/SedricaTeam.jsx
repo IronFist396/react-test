@@ -263,6 +263,7 @@ import b3 from '../../assets/people/b_3_new.jpg';
 import b4 from '../../assets/people/b_4_new.jpg';
 import b5 from '../../assets/people/b_5.jpg';
 import b6 from '../../assets/people/b_6_new.jpg';
+import b7 from '../../assets/people/b_7.jpg'
 
 
 
@@ -300,6 +301,7 @@ function SedricaCard() {
                 font-size: 1.6rem;
             }
             .two-container {
+                width: 100%;
                 display: flex;
                 flex-direction: row;
                 justify-content: center;
@@ -500,7 +502,7 @@ function SedricaCard() {
           <p className="card-p">Marketing</p>
         </div>
         <div className="card-content col-lg-4">
-          <MyCard lnk={'https://www.linkedin.com/in/dikshit-singla-b1538427a/'} img={b4} />
+          <MyCard lnk={'https://www.linkedin.com/in/dikshit-singla-b1538427a/'} img={b7} />
           <h2 className="fw-normal">Dikshit Singla</h2>
           <p className="card-p">Creatives</p>
         </div>
