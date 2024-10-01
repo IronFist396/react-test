@@ -11,8 +11,9 @@ function Sedrica(){
         <>
                 <MyClass/>
                 <VantaBackground/>
-                <Statistics/>
+                
                 <SedricaCard/>
+                <Statistics/>
                 <Footer/>
                 
                 

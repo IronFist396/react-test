@@ -1,28 +1,42 @@
-.outer-div {
+.custom-card {
+  max-width: 250px;
+  margin: 0 auto;
   background-color: #0d0d13;
-  padding-bottom: 100px;
-  padding-top: 120px;
-}
-
-.icn {
   color: white;
+  position: relative; /* Needed for pseudo-element positioning */
+  overflow: hidden; /* Ensures that the glossy effect stays within the card */
+  transition: transform 0.3s ease-in-out;
 }
 
-.subtxt {
-  font-size: 1.5rem;
-  font-weight: lighter;
+.custom-card:hover {
+  transform: scale(1.05); /* Slight zoom effect */
 }
 
-.numtxt {
+.custom-card::before {
+  content: '';
+  position: absolute;
+  top: -100%;
+  left: -100%;
+  width: 200%;
+  height: 200%;
+  background: rgba(255, 255, 255, 0.2); /* Glossy effect color */
+  transform: rotate(45deg);
+  transition: top 0.5s ease, left 0.5s ease;
+}
+
+.custom-card:hover::before {
+  top: 100%;
+  left: 100%;
+}
+
+.card-body .num-text {
+  padding-top: 10px;
+  font-family: "Archivo Black";
   font-size: 3rem;
   font-weight: bold;
-  font-family: 'Archivo Black';
 }
 
-@media (max-width: 1200px) {
-  .outer-div {
-    padding-bottom: 740px;
-    padding-top: 40px;
-  }
+.card-body .p-text {
+  font-weight: lighter;
+  font-size: 1.1rem;
 }
-
