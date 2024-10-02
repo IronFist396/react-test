@@ -1,0 +1,13 @@
+.preloader-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #000; /* Adjust based on your design */
+  }
+  
+  .preloader-gif {
+    width: 100px; /* Adjust size if needed */
+    height: 100px;
+  }
+  

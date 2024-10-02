@@ -374,6 +374,7 @@ import './MGallery.css';
 import prev from '../../assets/images/prev_img.svg';
 import next from '../../assets/images/next_img.svg';
 import close from '../../assets/images/close.svg';
+import Preloader from '../Preloader/Preloader.js'
 
 // Image imports
 import img1 from '../../assets/images/compressed/IMG_2387.jpg';
@@ -406,7 +407,8 @@ import img26 from '../../assets/cars/c8.jpg'
 const images = [img1, img2, img3, img4, img5, img6, img7, img10, img8, img9, img11, img12, img13, img14,
   img15, img16, img17, img18, img19, img20, img21, img24, img25, img23, img22, img26, img25];
 
-function MGallery() {
+
+const MGallery = () => {
   const [data, setData] = useState({ img: '', i: 0 });
   const [loading, setLoading] = useState(true);  // Track loading state
   const [loadedCount, setLoadedCount] = useState(0);  // Track number of loaded images
@@ -462,13 +464,8 @@ function MGallery() {
       <br />
       <h1>Gallery</h1>
 
-      {/* Loading screen only for images */}
-      {loading && (
-        <div className="loading-overlay">
-          <h2>Loading Images...</h2>
-          {/* Add a spinner here if needed */}
-        </div>
-      )}
+      {/* Loading screen with Preloader */}
+      {loading && <Preloader />}
 
       {/* Full-screen image view */}
       {data.img && (
@@ -516,8 +513,7 @@ function MGallery() {
             ))}
           </Masonry>
         </ResponsiveMasonry>
-      </div>
-
+      </div> 
       <Footer />
     </>
   );
